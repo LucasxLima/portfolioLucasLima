@@ -1,0 +1,400 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+section {
+    width: 100%;
+    height: 100vh; /* Ocupa toda a altura da tela */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Estiliza cada seção para melhor visibilidade */
+#sobre {
+    background: #f4f4f4;
+}
+
+#projetos {
+    background: #1915e9;
+    color: white;
+}
+
+#contato {
+    background: #333;
+    color: white;
+}
+
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 0px 20px;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    z-index: 1000;
+}
+
+.header-container {
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f4a261;
+}
+
+body {
+    padding-top: 70px; 
+}
+
+#sobre {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.sobre-container {
+    display: flex;
+    align-items: center;
+    max-width: 800px;
+    gap: 20px;
+}
+
+.minha-foto {
+    width: 150px; 
+    height: 150px;
+    border-radius: 50%; 
+    object-fit: cover;
+}
+
+.sobre-texto {
+    max-width: 500px;
+}
+
+.redes-sociais {
+    margin-top: 15px;
+    display: flex;
+    gap: 15px;
+}
+
+.botao {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: inline-block;
+    text-align: center;
+    width: 120px;
+}
+
+/* LinkedIn */
+.linkedin {
+    background-color: #0077b5;
+}
+
+.linkedin:hover {
+    background-color: #005582;
+    transform: scale(1.1);
+    box-shadow: 0px 4px 10px rgba(0, 119, 181, 0.5);
+}
+
+/* GitHub */
+.github {
+    background-color: #333;
+}
+
+.github:hover {
+    background-color: #222;
+    transform: scale(1.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 2rem;
+}
+
+.projetos-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.projeto {
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(135deg, #3474bd, #201777);
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: pulse 1.5s infinite alternate;
+}
+
+.projeto:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.05);
+    }
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+#projetos {
+    background: #1915e9;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo-projetos {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px; /* Espaço entre o título e as caixas */
+}
+
+.projetos-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.projeto {
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(135deg, #3474bd, #201777);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: pulse 1.5s infinite alternate;
+}
+
+#contato {
+    background: #222;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.titulo-contato {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.contato-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.contato-info {
+    font-size: 1.2rem;
+}
+
+.contato-links {
+    display: flex;
+    gap: 15px;
+}
+
+.botao {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 12px 20px;
+    border-radius: 8px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: inline-block;
+    text-align: center;
+    min-width: 140px;
+}
+
+/* Estilização dos botões */
+.github {
+    background-color: #333;
+}
+
+.github:hover {
+    background-color: #222;
+    transform: scale(1.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.linkedin {
+    background-color: #0077b5;
+}
+
+.linkedin:hover {
+    background-color: #005582;
+    transform: scale(1.1);
+    box-shadow: 0px 4px 10px rgba(0, 119, 181, 0.5);
+}
+
+#contato {
+    background: #222;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.titulContato {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Organiza os elementos */
+.contato-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Caixas para email e telefone */
+.contato-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contato-item {
+    background: #333;
+    padding: 15px 25px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    min-width: 250px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+/* Estilização dos botões */
+.contato-links {
+    display: flex;
+    gap: 15px;
+}
+
+.botao {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 12px 20px;
+    border-radius: 8px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: inline-block;
+    text-align: center;
+    min-width: 140px;
+}
+
+/* GitHub */
+.github {
+    background-color: #333;
+}
+
+.github:hover {
+    background-color: #222;
+    transform: scale(1.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* LinkedIn */
+.linkedin {
+    background-color: #0077b5;
+}
+
+.linkedin:hover {
+    background-color: #005582;
+    transform: scale(1.1);
+    box-shadow: 0px 4px 10px rgba(0, 119, 181, 0.5);
+}
